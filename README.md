@@ -2,7 +2,7 @@
 
 Marketing site and a self-contained, interactive product demo for **Kalgo** — trading analytics that turn the trade report your broker already gives you into a fast, visual picture of your trading: every trade on the price chart, the metrics that matter, and an equity curve you can scrub across.
 
-**Live:** _(add your Vercel URL here)_
+**Live:** https://canguru-ai.github.io/kalgo-site/
 
 ## What's here
 - `index.html` — landing page (original design + copy).
