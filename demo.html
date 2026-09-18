@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalgo — live demo</title>
+<meta name="description" content="Interactive Kalgo demo: every trade on the price chart, live metrics, and a scrubbable equity curve, running on synthetic data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span>Kalgo</a>
+    <div class="nav-links">
+      <a href="index.html" class="back">← Back to site</a>
+      <span class="badge-demo">Synthetic demo data</span>
+    </div>
+  </div>
+</nav>
+
+<div class="demo-shell">
+  <div class="demo-top">
+    <div class="title">
+      <h1>Account overview</h1>
+      <span class="tag mono muted" id="asof"></span>
+    </div>
+    <span class="tag mono muted">EUR/USD · daily · illustrative</span>
+  </div>
+
+  <div class="demo-layout">
+    <div>
+      <div class="panel" style="margin-bottom:18px">
+        <div class="panel-h"><h3>Price &amp; trades</h3><span class="tag">every entry and exit, in place</span></div>
+        <div id="price-chart"></div>
+        <div class="legend">
+          <span><i style="background:#2fd39b"></i> Long entry</span>
+          <span><i style="background:#28c9ff"></i> Short entry</span>
+          <span><i style="background:#2fd39b;border-radius:50%"></i> Closed in profit</span>
+          <span><i style="background:#ff5f6d;border-radius:50%"></i> Closed at a loss</span>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h3>Equity curve</h3><span class="tag">scrub to fly across the account</span></div>
+        <div id="equity-chart"></div>
+        <div class="scrubber">
+          <label><span>Rewind the account</span><span id="scrub-date" class="accent"></span></label>
+          <input type="range" id="scrub" min="0" max="100" value="100">
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <div class="panel-h"><h3>Performance</h3><span class="tag" id="ntrades"></span></div>
+        <div class="side-metrics">
+          <div class="sm"><div class="k">Net P&amp;L</div><div class="v" id="m-pnl">—</div></div>
+          <div class="sm"><div class="k">Win rate</div><div class="v" id="m-wr">—</div></div>
+          <div class="sm"><div class="k">Profit factor</div><div class="v" id="m-pf">—</div></div>
+          <div class="sm"><div class="k">Expectancy</div><div class="v" id="m-exp">—</div></div>
+          <div class="sm"><div class="k">Max drawdown</div><div class="v" id="m-dd">—</div></div>
+          <div class="sm"><div class="k">Avg win / loss</div><div class="v" id="m-awl">—</div></div>
+        </div>
+      </div>
+      <p class="muted" style="font-size:13px;margin-top:16px;line-height:1.6">
+        This is a self-contained demo on synthetic trades — the same views run on your own MT4/MT5 report in the full product. Drag the scrubber to watch the equity curve, drawdowns and stats rebuild trade by trade.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

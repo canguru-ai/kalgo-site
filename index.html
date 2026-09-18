@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalgo — see your trading clearly</title>
+<meta name="description" content="Kalgo turns the trade report your broker already gives you into a fast, visual picture — every trade on the chart, the numbers that matter, and an equity curve you can fly across.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="dot"></span>Kalgo</a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#backtest">Backtest</a>
+      <a class="btn btn-primary" href="demo.html">Open the live demo →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Trading analytics · runs on your own data</span>
+    <h1>See every trade<br>the way it <span class="grad">actually happened.</span></h1>
+    <p class="sub">Kalgo takes the trade report your broker already gives you and turns it into a fast, visual picture of your trading — every entry and exit on the price chart, the numbers that matter, and an equity curve you can fly across.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="demo.html">Open the live demo →</a>
+      <a class="btn btn-ghost" href="#how">See how it works</a>
+    </div>
+    <p class="hero-note">No install · no code · your data never leaves your hands</p>
+
+    <div class="hero-visual reveal">
+      <div class="hv-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">kalgo · account overview</span></div>
+      <div class="hv-body">
+        <div class="hv-chart">
+          <svg viewBox="0 0 640 340" preserveAspectRatio="none" style="width:100%;height:100%;display:block">
+            <defs>
+              <linearGradient id="eq" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="rgba(52,227,155,.32)"/>
+                <stop offset="1" stop-color="rgba(52,227,155,0)"/>
+              </linearGradient>
+            </defs>
+            <g stroke="rgba(255,255,255,.05)">
+              <line x1="0" y1="85" x2="640" y2="85"/><line x1="0" y1="170" x2="640" y2="170"/><line x1="0" y1="255" x2="640" y2="255"/>
+            </g>
+            <path id="eqfill" d="M0,300 L0,290 C60,285 90,250 140,255 C190,260 210,205 260,200 C310,195 330,225 380,205 C430,185 450,120 510,110 C560,102 600,70 640,58 L640,340 L0,340 Z" fill="url(#eq)"/>
+            <path id="eqline" d="M0,290 C60,285 90,250 140,255 C190,260 210,205 260,200 C310,195 330,225 380,205 C430,185 450,120 510,110 C560,102 600,70 640,58" fill="none" stroke="#34e39b" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- trade markers -->
+            <g>
+              <circle cx="140" cy="255" r="4" fill="#2fd39b"/><circle cx="260" cy="200" r="4" fill="#2fd39b"/>
+              <circle cx="380" cy="205" r="4" fill="#ff5f6d"/><circle cx="510" cy="110" r="4" fill="#2fd39b"/>
+            </g>
+          </svg>
+        </div>
+        <div class="hv-side">
+          <div class="stat"><span class="k">Net P&amp;L</span><span class="v pos mono">+$11,596</span></div>
+          <div class="stat"><span class="k">Win rate</span><span class="v mono">63.9%</span></div>
+          <div class="stat"><span class="k">Profit factor</span><span class="v mono">2.47</span></div>
+          <div class="stat"><span class="k">Trades</span><span class="v mono">61</span></div>
+          <div class="stat" style="margin-top:auto"><span class="k" style="color:var(--muted-2)">Illustrative demo data</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">It runs on data you already hold</span>
+      <h2>Your history is sitting in a file you never open twice.</h2>
+      <p>Every broker hands you a trade report — a dull spreadsheet you glance at once and forget. Kalgo reads that same file and turns it into something you actually want to explore.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="n">1</span><h4>Bring your report</h4><p>Drop in the MT4 or MT5 export your broker already gives you. Nothing to install, no API keys, no code to write.</p></div>
+      <div class="step reveal"><span class="n">2</span><h4>Watch it render</h4><p>In seconds, every trade lands on the price chart in place — where you entered, where you exited, and what it cost or made.</p></div>
+      <div class="step reveal"><span class="n">3</span><h4>Explore at speed</h4><p>Scrub the whole account through time, zoom into any moment, and watch the equity curve build without a stutter.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">What you get</span>
+      <h2>The parts nobody reviews become the parts you keep coming back to.</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-7"/></svg></div>
+        <div class="num">01</div><h3>Every trade on the chart</h3>
+        <p>Each trade drawn in place on the price — entry, exit, direction and result — so you see exactly where it happened and why it mattered.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 13v4M12 8v9M16 11v6"/></svg></div>
+        <div class="num">02</div><h3>The numbers that matter</h3>
+        <p>Win rate, expectancy, profit factor, max drawdown and net P&amp;L — on one screen, always current, no spreadsheet gymnastics.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c4 0 5-10 9-10s5 6 9 6"/><circle cx="21" cy="13" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+        <div class="num">03</div><h3>An equity curve you can fly across</h3>
+        <p>Scrub the account from first trade to last. The curve, the drawdowns and the stats all move with you, in real time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div class="metrics">
+      <div class="metric"><div class="v mono">&lt; 5s</div><div class="k">from report to rendered</div></div>
+      <div class="metric"><div class="v mono accent">0</div><div class="k">lines of code to write</div></div>
+      <div class="metric"><div class="v mono">10&nbsp;yrs</div><div class="k">of history, scrubbed smoothly</div></div>
+      <div class="metric"><div class="v mono">100%</div><div class="k">your data, kept by you</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="backtest">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="badge-demo">In build</span>
+      <h2 style="margin-top:16px">Backtest on the same canvas.</h2>
+      <p>Watch a strategy trade through real market history before you ever risk a dollar — rendered exactly like your own trades, on the same fast, explorable chart.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap reveal">
+    <span class="pill">Live demo · illustrative data</span>
+    <h2>See your own trading, clearly.</h2>
+    <p>Take the interactive demo for a spin — real charting, real metrics, running on a synthetic account so you can explore every control.</p>
+    <a class="btn btn-primary" href="demo.html">Open the live demo →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Kalgo · trading, made fast and explorable</span>
+    <span>Built by Keihan Infantes · 2026</span>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  // animate hero equity line draw
+  const line=document.getElementById('eqline');
+  if(line){const len=line.getTotalLength();line.style.strokeDasharray=len;line.style.strokeDashoffset=len;
+    requestAnimationFrame(()=>{line.style.transition='stroke-dashoffset 1.8s ease';line.style.strokeDashoffset=0;});}
+</script>
+</body>
+</html>
